@@ -48,12 +48,6 @@
       if (dist < 0.1 && dist > -0.1) {
         place(here)
         on = 0
-        if (width >= 100) {
-          el.style.height = 0
-          setTimeout(function () {
-            rm(el)
-          }, 300)
-        }
       } else {
         place(width - dist / 4)
         setTimeout(go, 16)
